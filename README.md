@@ -1,7 +1,24 @@
 # Enneagram Personality LoRA Trainer
 
-Train separate LoRAs for each Enneagram personality type.
 
-- One Enneagram type = One LoRA
-- Do not merge personality datasets
-- Designed for personality reproduction rather than trait memorization
+一般的な人格プロンプトは
+「責任感がある」
+「知識欲がある」
+などの特性を列挙する。
+
+しかし小型LLMは
+それらの概念を会話で連呼するだけで、
+人格として振る舞わないことが多い。
+
+そこで本研究では
+
+・人格特性ではなく
+・人格が言いそうなセリフ
+
+を学習データとして収集し、
+タイプごとに独立したLoRAを学習する。
+
+目的は
+「特性の暗唱」
+ではなく
+「価値観の再現」である。
